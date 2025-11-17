@@ -58,7 +58,7 @@ A persistência é feita com **SQLite + SQLAlchemy**, a documentação é gerada
 ### 🔹 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/samea-jesus0/flask-academic-crud.git
+git clone https://github.com/DiogoJP202/flask-academic-crud.git
 cd flask-academic-crud
 ```
 
