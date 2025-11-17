@@ -23,7 +23,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run unit tests
-        run: pytest tests/unit/test_academic_crud.py -q
+        run: python -m pytest -q
 
   docker_build_and_push:
     needs: tests
