@@ -44,3 +44,11 @@ jobs:
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USER }}/flask-academic-crud:latest
+
+  deploy_to_render:
+    needs: docker_build_and_push
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Render Deploy
+        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
